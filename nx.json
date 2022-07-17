@@ -1,0 +1,27 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "start",
+          "build-storybook",
+          "build",
+          "lint"
+        ]
+      }
+    }
+  },
+  "targetDefaults": {
+    "build-storybook": {
+      "outputs": [
+        "{projectRoot}/dist"
+      ]
+    },
+    "build": {
+      "outputs": [
+        "{projectRoot}/dist"
+      ]
+    }
+  }
+}

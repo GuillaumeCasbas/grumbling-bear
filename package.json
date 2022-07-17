@@ -1,0 +1,48 @@
+{
+  "name": "@grumblingbear/root",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Grumbling Bear - Personnal Design System",
+  "author": "GuillaumeCasbas <guillaume.casbas@gmail.com>",
+  "keywords": [
+    "ui-kit",
+    "react component",
+    "design-system"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "release": "lerna publish --no-private"
+  },
+  "homepage": "https://github.com/GuillaumeCasbas/grumbling-bear#readme",
+  "bugs": {
+    "url": "https://github.com/GuillaumeCasbas/grumbling-bear/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuillaumeCasbas/grumbling-bear.git"
+  },
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/sources/css",
+      "packages/sources/react",
+      "packages/showcases/*"
+    ]
+  },
+  "dependencies": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "^8.0.1"
+  }
+}

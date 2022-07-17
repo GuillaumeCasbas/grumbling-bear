@@ -1,0 +1,34 @@
+{
+  "name": "@guillaume-casbas/grumblingbear-css",
+  "version": "0.0.0",
+  "description": "Grumbling Bear Design System - CSS styles library",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "css",
+    "grumblingbear"
+  ],
+  "homepage": "https://github.com/GuillaumeCasbas/grumbling-bear#readme",
+  "bugs": {
+    "url": "https://github.com/GuillaumeCasbas/grumbling-bear/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuillaumeCasbas/grumbling-bear.git"
+  },
+  "license": "MIT",
+  "main": "dist/index.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "sass index.scss dist/index.css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
