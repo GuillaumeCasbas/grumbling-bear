@@ -1,13 +1,26 @@
 {
-  "name": "grumbling-bear",
+  "name": "@guillaume-casbas/grumbling-bear",
   "version": "0.1.0",
-  "description": "Grumbling Bear is React UI library",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "description": "Grumbling Bear is a React UI library",
   "author": "GuillaumeCasbas <guillaume.casbas@gmail.com>",
-  "repository": "https://github.com/GuillaumeCasbas/grumbling-bear.git",
+  "keywords": [
+    "react",
+    "ui",
+    "react component",
+    "design-system"
+  ],
+  "homepage": "https://github.com/GuillaumeCasbas/grumbling-bear#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuillaumeCasbas/grumbling-bear.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GuillaumeCasbas/grumbling-bear/issues"
+  },
   "license": "MIT",
   "private": false,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.3.0",
