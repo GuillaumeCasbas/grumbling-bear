@@ -26,8 +26,6 @@
   },
   "exclude": [
     "dist",
-    "node_module",
-    "src/**/*.spec.tsx",
-    "src/**/*.stories.tsx"
+    "node_module"
   ]
 }

@@ -8,6 +8,8 @@ This project is a React component library
 
 ```npx commitlint --from HEAD~1 --to HEAD --verbose```: Verifies the last commit message format
 
+```yarn lint```: runs the code linter
+
 ```yarn test```: runs the tests
 
 ```yarn storybook```: starts the Storybook server
