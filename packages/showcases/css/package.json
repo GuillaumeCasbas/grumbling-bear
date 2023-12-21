@@ -1,0 +1,23 @@
+{
+  "name": "@guillaume-casbas/showcase-grumblingbear-css",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Grumbling Bear Design System - CSS Showcase",
+  "license": "MIT",
+  "scripts": {
+    "start": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.6",
+    "@storybook/addon-interactions": "^7.6.6",
+    "@storybook/addon-links": "^7.6.6",
+    "@storybook/blocks": "^7.6.6",
+    "@storybook/html": "^7.6.6",
+    "@storybook/html-webpack5": "^7.6.6",
+    "@storybook/test": "^7.6.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.6"
+  }
+}

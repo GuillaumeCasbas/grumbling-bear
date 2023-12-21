@@ -1,0 +1,13 @@
+{
+  "version": "independent",
+  "npmClient": "yarn",
+  "command": {
+    "bootstrap": {
+      "npmClientArgs": ["--access public"]
+    },
+    "publish": {
+      "npmClient": "npm",
+      "registry": "https://registry.npmjs.org/"
+    }
+  }
+}

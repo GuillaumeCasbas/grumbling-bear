@@ -1,71 +1,35 @@
 {
-  "name": "@guillaume-casbas/grumbling-bear",
-  "version": "0.1.0",
-  "description": "Grumbling Bear is a React UI library",
+  "name": "@grumblingbear/root",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Grumbling Bear - Personnal Design System",
   "author": "GuillaumeCasbas <guillaume.casbas@gmail.com>",
   "keywords": [
-    "react",
-    "ui",
+    "ui-kit",
     "react component",
     "design-system"
   ],
+  "scripts": {
+    "build": "lerna run build",
+    "release": "lerna publish --no-private"
+  },
   "homepage": "https://github.com/GuillaumeCasbas/grumbling-bear#readme",
+  "bugs": {
+    "url": "https://github.com/GuillaumeCasbas/grumbling-bear/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GuillaumeCasbas/grumbling-bear.git"
   },
-  "bugs": {
-    "url": "https://github.com/GuillaumeCasbas/grumbling-bear/issues"
-  },
   "license": "MIT",
-  "private": false,
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^14.2.5",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
-  },
-  "scripts": {
-    "commit": "cz",
-    "start": "react-scripts start",
-    "build": "rollup -c",
-    "test": "react-scripts test",
-    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
-  },
-  "config": {
-    "commitizen": {
-      "path": "@commitlint/cz-commitlint"
-    }
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
+  "workspaces": {
+    "packages": [
+      "packages/sources/css",
+      "packages/sources/react",
+      "packages/showcases/*"
     ]
   },
+  "dependencies": {},
   "browserslist": {
     "production": [
       ">0.2%",
@@ -79,40 +43,6 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
-    "@commitlint/cz-commitlint": "^17.0.3",
-    "@rollup/plugin-commonjs": "^22.0.1",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "@rollup/plugin-typescript": "^8.3.3",
-    "@storybook/addon-actions": "^6.5.9",
-    "@storybook/addon-essentials": "^6.5.9",
-    "@storybook/addon-interactions": "^6.5.9",
-    "@storybook/addon-links": "^6.5.9",
-    "@storybook/builder-webpack5": "^6.5.9",
-    "@storybook/manager-webpack5": "^6.5.9",
-    "@storybook/node-logger": "^6.5.9",
-    "@storybook/preset-create-react-app": "^4.1.2",
-    "@storybook/react": "^6.5.9",
-    "@storybook/testing-library": "^0.0.13",
-    "@typescript-eslint/eslint-plugin": "^5.13.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "babel-plugin-named-exports-order": "^0.0.2",
-    "commitizen": "^4.2.5",
-    "eslint": "^8.2.0",
-    "eslint-config-airbnb": "19.0.4",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-storybook": "^0.6.1",
-    "husky": "^8.0.1",
-    "prop-types": "^15.8.1",
-    "rollup": "^2.77.0",
-    "rollup-plugin-dts": "^4.2.2",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-terser": "^7.0.2",
-    "webpack": "^5.73.0"
+    "lerna": "^8.0.1"
   }
 }
