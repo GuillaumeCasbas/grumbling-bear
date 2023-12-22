@@ -1,0 +1,53 @@
+$grmblgbr--sys--primary: $grmblgbr--ref--palette--p40;
+$grmblgbr--sys--on-primary: $grmblgbr--ref--palette--p100;
+
+$grmblgbr--sys--secondary: $grmblgbr--ref--palette--s40;
+$grmblgbr--sys--on-secondary: $grmblgbr--ref--palette--s100;
+
+$grmblgbr--sys--tertiary: $grmblgbr--ref--palette--t40;
+$grmblgbr--sys--on-tertiary: $grmblgbr--ref--palette--t100;
+
+$grmblgbr--sys--error: $grmblgbr--ref--palette--e40;
+$grmblgbr--sys--on-error: $grmblgbr--ref--palette--e100;
+
+$grmblgbr--sys--primary-container: $grmblgbr--ref--palette--p90;
+$grmblgbr--sys--on-primary-container: $grmblgbr--ref--palette--p10;
+
+$grmblgbr--sys--secondary-container: $grmblgbr--ref--palette--s90;
+$grmblgbr--sys--on-secondary-container: $grmblgbr--ref--palette--s10;
+
+$grmblgbr--sys--ternary-container: $grmblgbr--ref--palette--t90;
+$grmblgbr--sys--on-ternary-container: $grmblgbr--ref--palette--t10;
+
+$grmblgbr--sys--error-container: $grmblgbr--ref--palette--e90;
+$grmblgbr--sys--on-error-container: $grmblgbr--ref--palette--e10;
+
+$grmblgbr--sys--surface-dim: $grmblgbr--ref--palette--n80;
+$grmblgbr--sys--surface: $grmblgbr--ref--palette--n90;
+$grmblgbr--sys--surface-bright: $grmblgbr--ref--palette--n90;
+$grmblgbr--sys--surface-container-lowest: $grmblgbr--ref--palette--n100;
+$grmblgbr--sys--surface-container-low: $grmblgbr--ref--palette--n95;
+$grmblgbr--sys--surface-container: $grmblgbr--ref--palette--n95;
+$grmblgbr--sys--surface-container-high: $grmblgbr--ref--palette--n90;
+$grmblgbr--sys--surface-container-highest: $grmblgbr--ref--palette--n80; 
+
+$grmblgbr--sys--on-surface: $grmblgbr--ref--palette--n10;
+$grmblgbr--sys--on-surface-variant: $grmblgbr--ref--palette--n30;
+$grmblgbr--sys--outline: $grmblgbr--ref--palette--n50;
+$grmblgbr--sys--outline-variant: $grmblgbr--ref--palette--n80;
+
+$grmblgbr--sys--inverse-surface: $grmblgbr--ref--palette--n20;
+$grmblgbr--sys--on-inverse-surface: $grmblgbr--ref--palette--n95;
+$grmblgbr--sys--inverse-primary: $grmblgbr--ref--palette--p80;
+
+$grmblgbr--sys--shadow: $grmblgbr--ref--palette--n0;
+
+/* buttons */
+$grmblgbr--sys--btn-background-primary: $grmblgbr--sys--primary;
+$grmblgbr--sys--btn-color-primary: $grmblgbr--sys--on-primary;
+
+$grmblgbr--sys--btn-background-tonal: $grmblgbr--sys--secondary-container;
+$grmblgbr--sys--btn-color-tonal: $grmblgbr--sys--on-secondary-container;
+
+$grmblgbr--sys--btn-background-disabled: $grmblgbr--sys--surface;
+$grmblgbr--sys--btn-color-disabled: $grmblgbr--sys--on-surface;

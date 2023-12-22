@@ -1,4 +1,8 @@
 /** @type { import('@storybook/html').Preview } */
+
+/* For development */
+import '../../../sources/css/dist/index.css';
+
 const preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },

@@ -23,7 +23,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "sass index.scss dist/index.css --style=compressed"
+    "build": "sass src/index.scss dist/index.css --style=compressed"
   },
   "devDependencies": {
     "sass": "^1.69.5"
