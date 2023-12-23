@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "build": "lerna run build",
-    "release": "lerna publish --no-private"
+    "release": "lerna publish from-package",
+    "release:all": "lerna publish --no-private"
   },
   "homepage": "https://github.com/GuillaumeCasbas/grumbling-bear#readme",
   "bugs": {

@@ -2,37 +2,45 @@
 $elevation: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
 
 .grumblingbear-btn {
-  background-color: $grmblgbr--sys--btn-background-primary;
-  border: 1px solid $grmblgbr--sys--btn-background-primary;
+  /* default primary */
+  background-color: var(--grmblgbr--sys--primary);
+  border: 1px solid var(--grmblgbr--sys--primary);
   border-radius: 100px;
-  color: $grmblgbr--sys--btn-color-primary;
+  color: var(--grmblgbr--sys--on-primary);
   font-size: 14px;
   padding: 10px 24px;
   text-decoration: none;
 
-  &:not(:disabled):hover {
-    box-shadow: $elevation;
+  &:hover {
     cursor: pointer;
+    opacity: 0.92;
   }
 
   &:focus {
-    border-color: $grmblgbr--sys--inverse-primary !important;
+    border-color: var(--grmblgbr--sys--inverse-primary) !important;
+  }
+
+  &:hover, &:focus {
+    box-shadow: $elevation;
+  }
+
+  &:not(:disabled):hover {
+    background-color: var(--grmblgbr--sys--primary);
   }
 
   &.is-tonal {
-    background-color: $grmblgbr--sys--btn-background-tonal;
-    border-color: $grmblgbr--sys--btn-background-tonal;
-    color: $grmblgbr--sys--btn-color-tonal;
+    background-color: var(--grmblgbr--sys--secondary-container);
+    border-color: var(--grmblgbr--sys--secondary-container);
+    color: var(--grmblgbr--sys--on-secondary-container);
 
     &:hover {
-      background-color: $grmblgbr--ref--palette--s80;
-      border-color: $grmblgbr--ref--palette--s80;
+      background-color: var(--grmblgbr--ref--palette--s80);
+      border-color: var(--grmblgbr--ref--palette--s80);
     }
   }
 
   &:disabled, &.disabled {
-    background-color: $grmblgbr--sys--btn-background-disabled;
-    border-color: $grmblgbr--sys--btn-background-disabled;
-    color: $grmblgbr--sys--btn-color-disabled
+    color: var(--grmblgbr--sys--on-surface);
+    opacity: 0.30;
   }
 }
