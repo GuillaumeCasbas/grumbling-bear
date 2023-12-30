@@ -42,7 +42,6 @@
   
   --grmblgbr--sys--shadow: var(--grmblgbr--ref--palette--n0);
 
-  body {
-    background-color: var(--grmblgbr--sys--surface);
-  }
+  --grmblgbr--sys--bg: var(--grmblgbr--sys--surface);
+  --grmblgbr--sys--state-layer--primary-008: #D0BCFF14;
 }

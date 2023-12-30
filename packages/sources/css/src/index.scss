@@ -1,5 +1,9 @@
 @import 'design-tokens/references';
 @import 'design-tokens/theme/light.scss';
 @import 'design-tokens/theme/dark.scss';
+@import 'design-tokens/styles.scss';
 
+:root {
+  background-color: var(--grmblgbr--sys--bg);
+}
 @import 'components/button';
