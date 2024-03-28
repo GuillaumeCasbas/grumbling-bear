@@ -1,15 +1,16 @@
+import { dirname, join } from "path";
 /** @type { import('@storybook/html-webpack5').StorybookConfig } */
 const config = {
   stories: [
     "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
   addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
+    getAbsolutePath("@storybook/addon-links"),
+    getAbsolutePath("@storybook/addon-essentials"),
+    getAbsolutePath("@storybook/addon-interactions"),
   ],
   framework: {
-    name: "@storybook/html-webpack5",
+    name: getAbsolutePath("@storybook/html-webpack5"),
     options: {
       builder: {
         useSWC: true,
@@ -21,3 +22,7 @@ const config = {
   },
 };
 export default config;
+
+function getAbsolutePath(value) {
+  return dirname(require.resolve(join(value, "package.json")));
+}
